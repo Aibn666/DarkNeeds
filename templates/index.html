@@ -13,7 +13,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-8 mx-auto mt-5">
-                    <h1>Posts</h1>
+                    <h1 class="mb-5">Posts</h1>
+
+                    {% for post in posts %}
+
+                    <h2 class="mb-5">{{ post.title }}</h2>
+
+                    <div class="description">
+
+                        {{ post.text|safe }}
+
+                    </div>
+
+                    {% endfor %}
                 </div>
             </div>
         </div>
