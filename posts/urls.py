@@ -6,5 +6,5 @@ from .import views
 
 
 urlpatterns = [
-    path('', views.index('index.html')),
+    path('', views.index, name="index"),
 ]
